@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary colors */
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark_Raspberry: hsl(332, 51%, 32%);
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Rose_White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light_Grey: hsl(30, 18%, 87%);
+    --Wenge_Brown: hsl(30, 10%, 34%);
+    --Dark_Charcoal: hsl(24, 5%, 18%);
+    --heading_font: "Young Serif", serif;
+    --rest_font: "Outfit", sans-serif;
+}
+
+.wrapper {
+    background-color: var(--Eggshell);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    padding: 25px;
+    height: fit-content;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.header_details,
+.time_consume,
+.instructions,
+.nutrition {
+    width: 650px;
+}
+
+.header_img {
+    width: 650px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: var(--heading_font);
+    letter-spacing: 0.6px;
+    font-weight: 400;
+}
+
+/* Rest classes for applying font-family */
+.heading_para {
+    font-family: var(--rest_font);
+}
+
+.heading_para {
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.time_consume {
+    background-color: var(--Rose_White);
+    padding: 20px 30px;
+    font-family: var(--rest_font);
+    border-radius: 10px;
+}
+
+.time_consume>h3 {
+    color: var(--Nutmeg);
+}
+
+.preparation_list {
+    padding-left: 20px;
+}
+
+.preparation_list>li {
+    padding-top: 8px;
+    color: var(--Wenge_Brown);
+    padding-left: 15px;
+}
+
+.ingredients h2{
+    font-weight: 500;
+    font-size: 27px;
+    font-family: var(--heading_font);
+    letter-spacing: 1px;
+    color: var(--Dark_Raspberry);
+}
+
+.ingredients_list{
+    padding: 20px 0 0 25px;
+    font-family: var(--rest_font);
+}
+
+.ingredients_list>li{
+    padding-left: 20px;
+    padding-bottom: 8px;
+    color: var(--Dark_Charcoal);
+}
+
+.instructions>h2{
+    font-weight: 500;
+    font-size: 27px;
+    font-family: var(--heading_font);
+    letter-spacing: 1px;
+    color: var(--Dark_Raspberry);
+}
+
+.instructions_list{
+    padding: 20px 0 0 25px;
+    font-family: var(--rest_font);
+    color: var(--Nutmeg);
+}
+
+.instructions_list>li{
+    padding-left: 20px;
+    padding-bottom: 8px;
+    /* color: var(--Dark_Charcoal); */
+}
+
+.nutrition>h2{
+    font-weight: 500;
+    font-size: 27px;
+    font-family: var(--heading_font);
+    letter-spacing: 1px;
+    color: var(--Dark_Raspberry);
+}
+
+.nutrition>p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: var(--rest_font);
+}
+
+.inside_table{
+    padding-left: 20px;
+}
+
+.inside_table>p{
+    display: inline-block;
+    padding-right: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.nutrition_table:nth-child(3)>p{
+    padding-right: 500px;
+}
+
+.special_para{
+    font-weight: 700;
+    color: var(--Dark_Raspberry);
+}
+
+.common_para{
+    padding-left: 15px;
+}
+
+.common_para2{
+    padding-left: 5px;
+}
+
+.common_para3{
+    padding-left: 30px;
+}
+
+@media screen and (max-width:730px) {
+    .header_details,
+    .time_consume,
+    .instructions,
+    .nutrition {
+    width: 500px;
+    }
+
+    .header_img{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .header_img{
+        width: 450px
+    }
+    .container{
+        width: 500px;
+    }
+    .header_details,
+.time_consume,
+.instructions,
+.nutrition{
+    width: 450px;
+}
+
+.heading_para,.ingredients_list>li{
+    width: 450px;
+}
+}
+
+@media screen and (max-width: 575px) {
+    .container{
+        width: 460px;
+    }
+
+    .header_img{
+        width: 410px;
+    }
+
+    .time_consume{
+        width: 370px;
+    }
+.instructions,
+.nutrition,
+.ingredients{
+    width: 380px;
+}
+.ingredients_list>li{
+    width: 380px;
+}
+
+h1{
+    font-size: 24px;
+}
+
+.heading_para,.ingredients_list>li{
+    width: 398px;
+}
+
+.ingredients h2,.instructions h2,.nutrition h2{
+    font-size: 22px;
+}
+}
+
+@media screen and (max-width:500px) {
+    .container{
+        width: 421px;
+    }
+    .header_img{
+        width: 370px;
+    }
+
+    .heading_para{
+        width: 320px;
+    }
+
+    h1{
+        font-size: 22px;
+    }
+    .heading_para,.ingredients_list>li{
+        width: 320px;
+    }
+}
+
+@media screen and (max-width:435px) {
+    .container{
+        width: 400px;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    .header_img {
+        width: 350px;
+    }
+
+    .time_consume{
+        width: 350px;
+    }
+
+    .ingredients h2,.instructions h2,.nutrition h2{
+        font-size: 22px;
+    }
+
+    .heading_para,.ingredients_list>li{
+        width: 280px;
+    }
+
+    .instructions_list>li,.ingredients>li,.preparation_list>li {
+        padding: 0 0 8px 12px;
+    }
+
+    .instructions,
+    .nutrition,
+    .ingredients{
+    width: 340px;
+    }
+}
+
+@media screen and (max-width:410px) {
+    .container{
+        padding: 10px;
+        width: 331px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    .header_img{
+        width: 311px;
+    }
+    .instructions,
+    .nutrition,
+    .ingredients{
+    width: 300px;
+    }
+    .inside_table>p{
+        padding-right: 84px;
+    }
+
+    .time_consume{
+        width: 311px;
+    }
+    
+    .heading_para{
+        width: 300px;
+    }
+}
