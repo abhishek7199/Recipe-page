@@ -1,2 +1,3 @@
 <h1>Preview</h1>
-![recipe-page](https://github.com/abhishek7199/Recipe-page/assets/115469373/e7b160e3-0543-4e61-9ef2-6bc666593d96)
+![recipe-page](https://github.com/abhishek7199/Recipe-page/assets/115469373/f07adb5d-d166-4226-a44c-1d92d00dc397)
+
